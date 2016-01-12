@@ -4,7 +4,7 @@
  * UI.Layout
  */
 angular.module('ui.layout', [])
-  .controller('uiLayoutCtrl', ['$scope', '$attrs', '$element', 'LayoutContainer', function uiLayoutCtrl($scope, $attrs, $element, LayoutContainer) {
+  .controller('uiLayoutCtrl', ['$window', '$scope', '$attrs', '$element', 'LayoutContainer', function uiLayoutCtrl($window, $scope, $attrs, $element, LayoutContainer) {
     var ctrl = this;
     var opts = angular.extend({}, $scope.$eval($attrs.uiLayout), $scope.$eval($attrs.options));
     var numOfSplitbars = 0;
